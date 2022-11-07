@@ -11,7 +11,6 @@ def ls(archive, current_dir):
     for paths in path.iterdir():
         print(str(paths)[len(archive) + len(current_dir) + 1:])
 
-
 def cd(current_dir, command, archive_name_len):
     directory = command[3:]
     if directory == "..":
@@ -65,7 +64,6 @@ def main():
     print("Enter archive name:")
     archive = input()
     vshell(archive)
-
 
 if __name__ == "__main__":
     main()
